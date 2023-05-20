@@ -926,6 +926,46 @@ button {
   }
 }
 
+.bank-item .title {
+  background-color: #0097D8;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 0;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+.bank-item .imgthumb {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px;
+  text-align: center;
+}
+.bank-item .imgthumb img {
+  max-width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.bank-item .content {
+  background-color: #eeeeee;
+  padding: 5px 0;
+}
+.bank-item .content span {
+  background-color: #eeeeee;
+  color: #000000;
+  display: block;
+  font-size: 15px;
+  line-height: 1.4;
+  padding: 10px;
+}
+.bank-item .content span:nth-child(2n) {
+  background-color: #e4e4e4;
+}
+.bank-item:hover .title {
+  background-color: #F65314;
+}
+.bank-item:hover .imgthumb img {
+  transform: scale(1.1);
+}
+
 .footer {
   background-color: var(--bg-color-2);
   border-radius: 8px;
