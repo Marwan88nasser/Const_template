@@ -1,0 +1,33 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  color: var(--text-color-1);
+  background-color:var(--bg-color) ;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  direction: rtl;
+}
+// input number
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+// All Rest
+* {
+  @include all-reset;
+}
+// a Reset
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+}

@@ -1,0 +1,21 @@
+$main-color:#0097D8;
+$main-color-dark:#0285bd;
+:root {
+ --main-color:#0097D8;
+ --main-color-dark:#0285bd;
+ --sec-color:#2EFF9B;
+ --bg-color:white;
+ --bg-color-2:#151B28;
+ --text-color:#000000;
+ --text-color-2:#151515;
+ --text-color-3:#424242;
+ --border-color:#494949;
+ --white-color:white;
+ --black-color:black;
+ --orange-color:#F65314;
+}
+//transition
+$transition: 300ms;
+$main-transition: .4s;
+$sm-transition: .3s;
+$xs-transition: .2s;

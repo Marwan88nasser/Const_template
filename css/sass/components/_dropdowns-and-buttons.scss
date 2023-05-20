@@ -1,0 +1,81 @@
+// Buttons
+.main-btn {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 12px 20px;
+ gap: 6px;
+ background: var(--main-color);
+ white-space: nowrap;
+ color: var(--white-color);
+ border-radius: 5px;
+ font-size: 15px;
+ transition:$transition ;
+ width: fit-content;
+ line-height: 20px;
+ border: 0;
+ outline: 0;
+ -webkit-transition:$transition ;
+ -moz-transition:$transition ;
+ -ms-transition:$transition ;
+ -o-transition:$transition ;
+ &:hover {
+  color: var(--white-color);
+ }
+ &.btn-border {
+  border: 1px solid var(--main-color);
+  background-color:  var(--white-color);
+  color: var(--main-color);
+  &:hover {
+   background-color:  var(--main-color);
+   color: var(--white-color);
+  }
+ }
+}
+.btn-contact {
+ color: #0C0056;
+ background-color: var(--bg-color);
+ font-size: 15px;
+border: 1px solid #F0F0F0;
+backdrop-filter: blur(2px);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+padding: 9px 10px;
+border-radius: 12px;
+.icon {
+ border-radius: 50%;
+ width: 35px;
+ height: 35px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: #0097D8;
+ box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.2);
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+ i,svg {
+  color: var(--bg-color);
+  width: 18px;
+ }
+}
+}
+
+// Badges
+.badge-gradient {
+ font-weight: 600;
+ font-size: 15px;
+ background: linear-gradient(90deg, #0097D8 -22.76%, #2EFF9B 122.96%);
+ padding: 6px 22px;
+ box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+ border-radius: 74px;
+ color: var(--white-color);
+ -webkit-border-radius: 74px;
+ white-space: nowrap;
+ -moz-border-radius: 74px;
+ -ms-border-radius: 74px;
+ -o-border-radius: 74px;
+}
