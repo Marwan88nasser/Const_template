@@ -38,9 +38,8 @@ button {
   height: 250px;
   background-attachment: fixed;
   background-position: center center;
-  .slide-img {
-    @include full-w-h;
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
   .title {
     @include center-p-t;
     margin-bottom: 0;
