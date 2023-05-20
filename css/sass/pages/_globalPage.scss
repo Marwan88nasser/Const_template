@@ -31,3 +31,21 @@ button {
   border: none;
   outline: none;
 }
+
+.landing-slide {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-attachment: fixed;
+  background-position: center center;
+  .slide-img {
+    @include full-w-h;
+  }
+  .title {
+    @include center-p-t;
+    margin-bottom: 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+  }
+}

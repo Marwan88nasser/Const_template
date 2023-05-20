@@ -36,6 +36,18 @@
   align-items: center;
   justify-content: center;
 }
+//centering position & transform
+@mixin center-p-t {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+//Full Width & Height
+@mixin full-w-h {
+  width: 100%;
+  height: 100%;
+}
 //Overlay Before
 @mixin overlay-before($bg, $opc) {
   position: relative;
