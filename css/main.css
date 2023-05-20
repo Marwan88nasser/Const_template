@@ -64,11 +64,12 @@ button {
 .landing-slide {
   position: relative;
   width: 100%;
-  height: 250px;
+  height: 300px;
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 30px;
 }
 .landing-slide .title {
   position: absolute;
@@ -79,6 +80,165 @@ button {
   color: #ffffff;
   text-align: center;
   font-size: 40px;
+}
+.landing-slide .sm-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 77%;
+  color: #0097D8;
+  font-size: 60px;
+  margin: 0;
+}
+.landing-slide .sm-title span {
+  color: #fff;
+}
+
+.hosting-taps {
+  gap: 5px;
+}
+.hosting-taps .nav-item .nav-link {
+  border-radius: 0;
+  border: 1px solid #e9ecef;
+  color: #777;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.hosting-taps .nav-item .nav-link:hover {
+  background-color: #0097D8;
+  border-color: #0097D8;
+  color: #fff;
+}
+.hosting-taps .nav-item .nav-link.active {
+  background-color: #0097D8;
+  border-color: #0097D8;
+  color: #fff;
+}
+
+.box-package {
+  background-color: #fff;
+  padding: 45px 30px 45px 30px;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 1px 18px 0 #eee;
+}
+.box-package .icon-holder {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto 20px auto;
+}
+.box-package .icon-holder .badge-plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #11D861;
+}
+.box-package .icon-holder img {
+  width: 110px;
+  height: 110px;
+}
+.box-package .header {
+  margin-bottom: 35px;
+  color: #191d23;
+  transition: color 0.3s;
+}
+.box-package .header .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.box-package .fet {
+  margin-bottom: 35px;
+  list-style: none;
+}
+.box-package .fet li {
+  text-align: center;
+}
+.box-package .fet li:not(:last-child) {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #DDE9FF;
+}
+.box-package .fet li p {
+  transition: color 0.3s;
+  margin-bottom: 0;
+  font-weight: 500;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  color: #253B5A;
+}
+.box-package .price {
+  text-align: center;
+  color: #11D861;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.box-package .btn-order {
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  color: #11D861;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 1px solid #11D861;
+  position: relative;
+  transition: 300ms;
+  z-index: 1;
+  color: #fff;
+}
+.box-package .btn-order::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  transition: 300ms;
+  height: 100%;
+  background-color: #11D861;
+  z-index: -1;
+}
+.box-package .btn-order::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  transition: 300ms;
+  height: 100%;
+  z-index: -1;
+  background-color: #11D861;
+}
+.box-package .btn-order:hover {
+  color: #11D861;
+}
+.box-package .btn-order:hover::after, .box-package .btn-order:hover::before {
+  width: 0%;
+}
+.box-package:hover {
+  background-color: #365177;
+}
+.box-package:hover .header .title {
+  color: #fff;
+}
+.box-package:hover .fet li p {
+  color: #fff;
 }
 
 .top-nav {
@@ -170,7 +330,7 @@ button {
 
 .bottom-nav {
   padding: 4px 0 !important;
-  box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.05);
+  box-shadow: 0px 2px 8px rgba(99, 99, 99, 0.05), 0px 5px 8px rgba(99, 99, 99, 0.05);
 }
 .bottom-nav .logo {
   margin: 0 !important;
