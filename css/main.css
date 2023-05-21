@@ -129,12 +129,15 @@ button {
   box-shadow: 0 1px 18px 0 #eee;
 }
 .box-package .icon-holder {
+  transition: box-shadow 0.3s;
+  box-shadow: 0 1px 6px 0 #dbdbdb;
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
   margin: 0px auto 20px auto;
 }
 .box-package .icon-holder .badge-plan {
@@ -142,19 +145,18 @@ button {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 5px;
-  left: 20px;
+  top: 0px;
+  left: -3px;
   border-radius: 50%;
   width: 24px;
   height: 24px;
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  background-color: #11D861;
+  background-color: #0097D8;
 }
 .box-package .icon-holder img {
-  width: 110px;
-  height: 110px;
+  width: 38px;
 }
 .box-package .header {
   margin-bottom: 35px;
@@ -176,7 +178,7 @@ button {
 .box-package .fet li:not(:last-child) {
   padding-bottom: 15px;
   margin-bottom: 15px;
-  border-bottom: 1px solid #DDE9FF;
+  border-bottom: 1px solid #dde9ff;
 }
 .box-package .fet li p {
   transition: color 0.3s;
@@ -184,11 +186,11 @@ button {
   font-weight: 500;
   overflow-wrap: break-word;
   font-size: 14px;
-  color: #253B5A;
+  color: #253b5a;
 }
 .box-package .price {
   text-align: center;
-  color: #11D861;
+  color: #0097D8;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5em;
@@ -197,12 +199,12 @@ button {
   width: 100%;
   padding: 10px 20px;
   display: block;
-  color: #11D861;
+  color: #0097D8;
   border-radius: 4px;
   font-size: 18px;
   font-weight: 700;
   background-color: transparent;
-  border: 1px solid #11D861;
+  border: 1px solid #0097D8;
   position: relative;
   transition: 300ms;
   z-index: 1;
@@ -216,7 +218,7 @@ button {
   width: 50%;
   transition: 300ms;
   height: 100%;
-  background-color: #11D861;
+  background-color: #0097D8;
   z-index: -1;
 }
 .box-package .btn-order::before {
@@ -228,10 +230,10 @@ button {
   transition: 300ms;
   height: 100%;
   z-index: -1;
-  background-color: #11D861;
+  background-color: #0097D8;
 }
 .box-package .btn-order:hover {
-  color: #11D861;
+  color: #0097D8;
 }
 .box-package .btn-order:hover::after, .box-package .btn-order:hover::before {
   width: 0%;
@@ -239,11 +241,74 @@ button {
 .box-package:hover {
   background-color: #365177;
 }
+.box-package:hover .icon-holder {
+  box-shadow: 0 1px 6px 0 rgba(26, 26, 26, 0.26);
+}
 .box-package:hover .header .title {
   color: #fff;
 }
 .box-package:hover .fet li p {
   color: #fff;
+}
+
+.nav-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.nav-filter .nav-item .nav-link {
+  padding: 7px 25px;
+  background-color: #f7f7f7;
+  color: #6c7781;
+}
+.nav-filter .nav-item .nav-link:hover {
+  background-color: #e8e8e8;
+}
+.nav-filter .nav-item .nav-link.active {
+  background-color: #0097D8;
+  color: #fff;
+}
+
+.boxes-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 16px;
+}
+.boxes-gallery .box {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 9px 0 rgb(211, 211, 211);
+}
+.boxes-gallery .box .img {
+  width: 100%;
+  transition: 0.3s;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.boxes-gallery .box .caption {
+  position: absolute;
+  padding: 13px;
+  width: 100%;
+  background: rgba(15, 18, 22, 0.45);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  left: 0;
+  bottom: -100%;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 16px;
+}
+.boxes-gallery .box:hover .img {
+  transform: rotate(3deg) scale(1.1);
+}
+.boxes-gallery .box:hover .caption {
+  bottom: 0px;
 }
 
 .top-nav {
